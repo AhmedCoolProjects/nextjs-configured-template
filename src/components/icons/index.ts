@@ -1,5 +1,7 @@
+import Logo from "@p/next.svg";
+
 const Icons = {
-  //   logo: Logo,
+  logo: Logo,
 };
 
 export { Icons };
