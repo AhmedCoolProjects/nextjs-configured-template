@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from "@/app/hooks";
 import { Button } from "../ui/button";
 import { resetJoke, setJoke } from "@/features/joke/jokeSlice";
 
-function Container() {
+function HomepageContainer() {
   const joke = useAppSelector((state) => state.joke.joke);
   const dispatch = useAppDispatch();
 
@@ -26,15 +26,15 @@ function Container() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+    <div className="flex flex-col items-center justify-center">
       <h3>This is your random text as a joke:</h3>
       <p className="p-4 border border-gray-400 rounded-xl my-3">{joke}</p>
       <Button className="mb-3" onClick={setRandomText}>
         Click me
       </Button>
       <Button onClick={resetText}>Reset</Button>
-    </main>
+    </div>
   );
 }
 
-export default Container;
+export default HomepageContainer;

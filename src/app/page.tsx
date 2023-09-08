@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Container from "@/components/hompage/container";
+import HomepageContainer from "@/components/homepage/container";
+import HomepageContainerApi from "@/components/homepage/containerApi";
 
 export const metadata: Metadata = {
   title: "Nextjs Configured Template",
@@ -8,5 +9,12 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <Container />;
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <HomepageContainer />
+      <br />
+      <br />
+      <HomepageContainerApi />
+    </main>
+  );
 }
