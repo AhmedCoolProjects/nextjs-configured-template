@@ -16,8 +16,12 @@ const jokeSlice = createSlice({
     setJoke(state, action: PayloadAction<string>) {
       state.joke = action.payload;
     },
+    // resetJoke
+    resetJoke(state) {
+      state.joke = "";
+    },
   },
 });
 
-export const { setJoke } = jokeSlice.actions;
+export const { setJoke, resetJoke } = jokeSlice.actions;
 export default jokeSlice.reducer;
