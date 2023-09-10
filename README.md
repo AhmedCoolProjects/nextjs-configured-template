@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Configured Template
+
+This is a Next.js template with various branches, each showcasing different technologies and features. Choose the branch that fits your project's needs.
+
+- [Main Branch](https://github.com/AhmedCoolProjects/nextjs-configured-template/tree/main): Next.js 13 + @radix-ui components configured + @svgr/webpack + Tailwind CSS + tailwindcss-animate and tailwind-merge plugins + TypeScript
+- [Redux Branch](https://github.com/AhmedCoolProjects/nextjs-configured-template/tree/redux): @reduxjs/toolkit state management, generating random texts, and reset functionality
+- [RTK-Query Branch](https://github.com/AhmedCoolProjects/nextjs-configured-template/tree/rtk-query): Uses Redux Toolkit Query (RTK Query) for API requests from [JokeAPI](https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,sexist&idRange=0-100) to fetch jokes and store them in the application state
+
+## Live Demos
+
+You can explore live demos of each branch by following these links:
+
+- [Main Branch Demo](https://nextjs13-template-ui.vercel.app/)
+- [Redux Branch Demo](https://nextjs13-template-redux.vercel.app/)
+- [RTK-Query Branch Demo](https://nextjs13-template-rtk-query.vercel.app/)
+
+## Features
+
+- Modern Next.js setup with version 13
+- Use of @radix-ui components for enhanced UI functionality
+- Integration of @svgr/webpack for SVG support
+- Tailwind CSS for rapid and customizable styling
+- Additional Tailwind CSS plugins for animations and merging classes
+- TypeScript for type safety
+- Redux state management in the Redux branch
+- API request handling with RTK Query in the RTK Query branch
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository:
+
+```bash
+git clone https://github.com/AhmedCoolProjects/nextjs-configured-template.git
+```
+
+2. Checkout the branch that suits your project's requirements. For example, to use the Main branch:
+
+```bash
+git checkout main
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see your application in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Feel free to customize this template to fit your specific project needs. You can add more components, pages, or libraries as necessary. The configuration and features provided in each branch should serve as a solid starting point for your Next.js project.
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Happy coding! 😊
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
